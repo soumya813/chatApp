@@ -22,6 +22,6 @@ io.on('connection', (socket) => {
     console.log('connected...')
 
     socket.on('message', (msg) => {
-        socket.brodcast.emit('message', msg)
+        socket.broadcast.emit('message', msg)
     })
 })
