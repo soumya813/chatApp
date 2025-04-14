@@ -84,13 +84,34 @@ section.chat_section {
     z-index: 2;
 }
 
-textarea {
-    width: 100%;
-    border: none;
-    padding: 20px;
-    font-size: 16px;
-    outline: none;
+.input-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
     background: #fbfbfb;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+textarea {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    background: #fbfbfb;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background: #7269ef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background: #5b54c7;
 }
