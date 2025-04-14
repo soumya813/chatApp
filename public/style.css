@@ -18,6 +18,8 @@ section.chat_section{
     max-width: 90%;
     background: #fff;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    margin: 40px auto; /* Adds margin top and bottom */
+    border-radius: 8px;
 }
 
 .brand{
@@ -35,7 +37,8 @@ section.chat_section{
 }
 
 .message_area{
-    height: 500px;
+    min-height: 400px; /* Minimum height */
+    max-height: 500px; /* Maximum height */
     padding: 16px;
     display: flex;
     flex-direction: column;
