@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #F8F;
+    background: #F8F8F8;
     font-family: sans-serif;
 }
 
@@ -49,5 +49,32 @@ textarea{
     padding: 20px;
     font-size: 16px;
     outline: none;
-    background: #fbf;
+    background: #fbfbfb;
+}
+
+.message{
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming{
+    background: #8F8BE8;
+    color: #fff;
+}
+
+.outgoing{
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+}
+
+.message h4{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
 }
