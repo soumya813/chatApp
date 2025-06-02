@@ -153,6 +153,21 @@ if (!usersList) {
     messageArea.parentNode.insertBefore(usersList, messageArea);
 }
 
+socket.on('users-list', (users) => {
+    usersList.innerHTML = '';
+    users.forEach(user => {
+        let li = document.createElement('li');
+        li.textContent = user;
+        li.style.background = '#e0e0e0';
+        li.style.color = '#333';
+        li.style.padding = '4px 12px';
+        li.style.borderRadius = '12px';
+        li.style.fontSize = '14px';
+        usersList.appendChild(li);
+    });
+    window._lastUsersList = [...users];
+});
+
 // --- Emoji picker ---
 let emojiBtn = document.getElementById('emoji-btn');
 if (!emojiBtn) {
