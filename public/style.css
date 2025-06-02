@@ -124,6 +124,10 @@ ul#users-list li {
     letter-spacing: 1px;
 }
 
+.outgoing h4 {
+    color: #fff;
+}
+
 .message .timestamp {
     display: block;
     font-size: 11px;
